@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view>
+  <view class='AboutMe'>
+      <text>QQ：1141899305</text>
+      <text>E-mail：1141899305@qq.com</text>
+      <text>本程序会一直更新修复 </text>
+  </view>
+</view> 
