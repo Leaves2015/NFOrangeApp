@@ -1,6 +1,4 @@
 <!--pages/home/home.wxml-->
-<import src="home-item/home-item-template.wxml" />
-
 <view id='box'>
     <view class='box'>
         <swiper 
@@ -11,7 +9,11 @@
             circular="Boolean"
           >
           <swiper-item >
-              <image src='/image/ban.jpg'></image>
+              <image src='/image/mj_ban.jpg'></image>
+          </swiper-item>
+
+          <swiper-item >
+              <image src='/image/mj_ban1.jpg'></image>
           </swiper-item>
         </swiper>
     </view>
@@ -21,7 +23,7 @@
     </view> 
 
     <view>
-      <block wx:for="{{main_key}}" wx:for-item="item" class="left"  wx:for-index="idx">
+      <block wx:for="{{main_key}}" wx:key="id" wx:for-item="item" class="left"  wx:for-index="idx">
           <view catchtap='btn' data-id="{{item.id}}"> 
             <view class='main_boxtwo'>
                 <image class='main-image' src="{{item.image}}"></image>
