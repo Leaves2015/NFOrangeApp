@@ -101,7 +101,7 @@ Page({
     wx.setStorageSync("cartItems", cartItems)
   },
 
-  //提示
+  //清空购物车
   go: function (e) {
     this.setData({
       cartItems: []

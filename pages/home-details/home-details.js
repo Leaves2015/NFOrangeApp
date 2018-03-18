@@ -26,7 +26,7 @@ Page({
   addcart:function(e){
     var cartItems = wx.getStorageSync("cartItems") || []
     var exist = cartItems.find(function(e1){
-      return e1.id = e.target.dataset.id
+      return e1.id == e.target.dataset.id
     })
 
     /*如果购物车里面有该商品那么它的数量每次加一*/

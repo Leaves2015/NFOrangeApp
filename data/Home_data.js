@@ -2,7 +2,7 @@ var Home_data = [
   {
     id:0,
     title:"1斤装",
-    titleTwo:"5元/斤 10斤包邮",
+    titleTwo:"5元/斤 10斤以上包邮",
     price: "5",
     value:"1",
     image:"https://wx1.sinaimg.cn/mw690/d678df2bgy1fpdusl3zkqj20dc0a03ym.jpg",
