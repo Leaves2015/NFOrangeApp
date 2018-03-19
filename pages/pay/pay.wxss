@@ -1,5 +1,5 @@
 /* pages/pay/pay.wxss */
-.pay-Bottom{
+.pay-WeiXinPay{
   width: 100%;
   height: 105rpx;
   line-height: 105rpx;
@@ -7,17 +7,18 @@
   position: fixed;
   bottom: 0;
   color: white;
-  font-size: 32rpx;
+  font-size: 35rpx;
   text-align: center
 }
 
-.pay-main{
+/*************** 购物清单 *****************/
+.pay-GoodList{
   width: 100%;
   height: 250rpx;
   background: white;
 }
 
-.main-one{
+.pay-GoodListText{
   height: 80rpx;
   line-height: 80rpx;
   border-bottom: 1px solid #ccc;
@@ -25,7 +26,7 @@
   padding-left: 25rpx;
 }
 
- .main-image{
+ .pay-GoodListInfoImage{
   display: block;
   width:160rpx;
   height:140rpx;
@@ -33,42 +34,39 @@
   padding: 15rpx 15rpx
 }
 
-.main_left{
+.pay-GoodListInfoLeft{
   display: flex;
   flex-direction: column;
   float: left;
   margin-top: 30rpx;
 }
 
-.main_right{
+.pay-GoodListInfoRight{
   float: right;
   font-size: 32rpx;
   margin: 18rpx 20rpx;
 }
 
-.main-title{
+.pay-GoodListInfoLeftTitle{
   display: flex;
   font-size: 30rpx;
 }
 
-.main-price{
+.pay-GoodListInfoLeftPrice{
   font-size: 30rpx;
   color: red;
 }
 
-.pay-main{
-  margin-bottom: 10rpx;
-}
-
-.pay-mainTwo{
+/*************** 配送地址 *****************/
+.pay-AddrInfo{
   width: 100%;
-  height: 200rpx;
+  height: 185rpx;
   background: white;
   margin-top: 13rpx;
   margin-bottom: 13rpx;
 }
 
-.mianTwo-one{
+.pay-AddrInfoText{
   height: 100rpx;
   line-height: 100rpx;
   font-size: 30rpx;
@@ -76,18 +74,45 @@
   border-bottom: 1px solid #ccc;
 }
 
-.mianTwo-two{
+.pay-AddrInfoInput{
+  height: 85rpx;
+}
+
+.pay-AddrInfoInput input{
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  height: 85rpx;
+  line-height: 85rpx
+}
+
+/*************** 配送时间 *****************/
+.pay-SendTime{
+  width: 100%;
+  height: 200rpx;
+  background: white;
+  margin-top: 13rpx
+}
+
+.pay-SendTimeText{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  padding-left: 25rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.pay-SendTimeSelect{
   line-height: 100rpx;
 }
 
-.array{
+.pay-SendTimeSelectArray{
   line-height: 100rpx;
   font-size: 30rpx;
   padding-left: 25rpx;
   color: #808080;
 }
 
-.array image{
+.pay-SendTimeSelectArray image{
   width: 40rpx;
   height: 40rpx;
   padding-top: 28rpx;
@@ -95,13 +120,16 @@
   float: right;
 }
 
-.pay-mainThree{
+
+/********** 留言 **************/
+.pay-Msg{
   width: 100%;
   height: 170rpx;
   background: white;
+  margin-top: 13rpx
 }
 
-.mainThree-one{
+.pay-MsgText{
   height: 80rpx;
   line-height: 80rpx;
   border-bottom: 1px solid #ccc;
@@ -109,73 +137,73 @@
   padding-left: 25rpx;
 }
 
-.mainThree-two{
+.pay-MsgInput{
   height: 85rpx;
 }
 
-.mainThree-two input{
+.pay-MsgInput input{
   padding-left: 25rpx;
   font-size: 30rpx;
   height: 85rpx;
   line-height: 85rpx
 }
 
-.pay-mainFive{
+/**************订单金额****************/
+.pay-Money{
   width: 100%;
   height: 210rpx;
   background: white;
   margin-top: 13rpx
 }
 
-.mainFive-one{
+.pay-MoneyText{
   height: 80rpx;
   line-height: 80rpx;
   border-bottom: 1px solid #ccc;
 }
 
-.mainFive-one .left{
+.pay-MoneyText .left{
   float: left;
   padding-left: 25rpx;
   font-size: 30rpx;
 }
 
-.mainFive-one .right{
+.pay-MoneyText .right{
   float: right;
   color: red;
   font-size: 30rpx;
   padding-right: 20rpx
 }
 
-.mainFive-two{
+.pay-MoneyFreight{
   height: 80rpx;
   line-height: 80rpx;
 }
 
-.mainFive-two .left{
+.pay-MoneyFreight .left{
   float: left;
   padding-left: 25rpx;
   font-size: 25rpx;
 }
 
-.mainFive-two .right{
+.pay-MoneyFreight .right{
   float: right;
-  /* color: #ccc; */
   font-size: 25rpx;
   padding-right: 20rpx
 }
 
-.mainFive-three{
+.pay-MoneyReal{
   height: 14rpx;
   line-height: 14rpx;
 }
 
-.mainFive-three .left{
+.pay-MoneyReal .left{
   float: left;
   font-size: 25rpx;
   padding-left: 25rpx;
 }
 
-.mainFive-three .right{
+.pay-MoneyReal .right{
   float: right;
   color: red;
   font-size: 30rpx;

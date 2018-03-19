@@ -36,7 +36,7 @@
               <text class='checkAll'>全选</text>
 
               <view class='cart-pay'>
-                <text class='cart_pay' bindtap="go" data-id="{{item.id}}">清空购物车</text>
+                <text class='cart_pay' bindtap="go" data-id="{{item.id}}">结算</text>
               </view>
 
               <view class='cart-sum'>

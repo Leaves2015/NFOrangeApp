@@ -3,65 +3,74 @@
     <view class='pay-header'>
     </view>
 
-    <view class='pay-main'>
-        <view class='main-one'>
+    <view class='pay-GoodList'>
+        <view class='pay-GoodListText'>
             <text>购物清单</text>
         </view>
 
-        <view class='main-two'>
-            <image src="{{data.image}}" class='main-image'></image>
-            <view class='main_left'>
-                <text class='main-title'>{{data.title}}</text>
-                <text class='main-price'>￥{{data.price}}</text>
+        <view class='pay-GoodListInfo'>
+            <image src="{{data.image}}" class='pay-GoodListInfoImage'></image>
+            <view class='pay-GoodListInfoLeft'>
+                <text class='pay-GoodListInfoLeftTitle'>{{data.title}}</text>
+                <text class='pay-GoodListInfoLeftPrice'>￥{{data.price}}</text>
             </view>
-            <view class='main_right'>
-                <text>x{{data.value}}</text>
+            <view class='pay-GoodListInfoRight'>
+              <text>{{data.value}}</text>
             </view>
         </view>
     </view>
 
-    <view class='pay-mainTwo'>
-      <view class='mianTwo-one'>
+    <view class='pay-AddrInfo'>
+      <view class='pay-AddrInfoText'>
+        <text>配送地址</text>
+      </view>
+
+      <view class='pay-AddrInfoInput'>
+        <input placeholder="必填：请填写收货地址" auto-focus></input>
+      </view>
+    </view>
+
+    <view class='pay-SendTime'>
+      <view class='pay-SendTimeText'>
         <text>配送时间</text>
       </view>
 
-      <view class='mainTwo-two'>
+      <view class='pay-SendTimeSelect'>
           <picker bindchange="select" value='{{index}}' range='{{array}}'>
-              <view class='array'>
-                  <text>{{array[index]}}</text>
-                  <image src='/image/right.png'></image>
+              <view class='pay-SendTimeSelectArray'>
+                <text>{{array[index]}}</text>
+                <image src='/image/right.png'></image>
               </view> 
           </picker>
       </view>
     </view> 
 
-    <view class='pay-mainThree'>
-        <view class='mainThree-one'>
+    <view class='pay-Msg'>
+        <view class='pay-MsgText'>
           <text>留言</text>
         </view>
 
-        <view class='mainThree-two'>
-          <input placeholder="选填：给商家留言(100字以内)" auto-focus></input>
+        <view class='pay-MsgInput'>
+          <input placeholder="选填：给商家留言(100字以内)"></input>
         </view>
     </view>
 
-    <view class='pay-mainFive'>
-        <view class='mainFive-one'>
+    <view class='pay-Money'>
+        <view class='pay-MoneyText'>
             <text class='left'>订单金额</text>
             <text class='right'>￥{{data.price}}</text>
         </view>
-        <view class='mainFive-two'>
+        <view class='pay-MoneyFreight'>
             <text class='left'>运费</text>
             <text class='right'>+￥0</text>
         </view>
-         <view class='mainFive-three'>
+        <view class='pay-MoneyReal'>
             <text class='left'>实际付款</text>
             <text class='right'>￥{{data.price}}</text>
         </view> 
     </view>
 
-  
-    <view class='pay-Bottom' bindtap='pay'>
+    <view class='pay-WeiXinPay' bindtap='pay'>
         <text>微信支付</text>
     </view>
 </view>
